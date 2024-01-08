@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "audio_to_video"
-  s.version     = "0.0.2"
+  s.version     = "0.0.0"
   s.summary     = "AudioToVideo#audio_to_video method lets you create videos easily"
   s.description = "Convert an Audio and an Image into Videos easily!"
   s.authors     = ["Enoch Tamulonis", "Kurt Tamulonis"]

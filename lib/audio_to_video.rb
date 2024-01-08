@@ -16,7 +16,7 @@ class AudioToVideo
 
     audio.open do |local_audio|
       image.open do |local_image|
-        command = "ffmpeg #{loop_option} -i #{local_image.path} -i #{local_audio.path} -c:v libx264 -tune stillimage -c:a aac -strict experimental -b:a 192k -shortest #{movie_path}"
+        command = "ffmpeg #{loop_option} -i #{local_image.path} -i #{local_audio.path} -c:v libx264 -tune stillimage -c:a aac -strict experimental -b:a 192k -shortest #{output_path}"
         system(command)
       end
     end

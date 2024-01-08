@@ -1,8 +1,7 @@
 # Videos for your Songs
 class AudioToVideo
-  def self.audio_to_video(audio, image, &block)
+  def self.audio_to_video(audio, image)
     # Supports Files or ActiveStorage::Attachment
-    image = conversion.image
     loop_option = if image.blob.content_type.downcase.include?("gif")
       "-ignore_loop 0" 
     else
